@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Траты за месяц</title>
+</head>
+<body>
+<h1>Просмотр трат за месяц</h1>
+<form action="/api/transactions/expenses" method="get">
+    <label for="month">Выберите месяц:</label>
+    <input type="month" id="month" name="month" required>
+
+    <button type="submit">Показать траты</button>
+</form>
+
+<table>
+    <thead>
+    <tr>
+        <th>Сумма</th>
+        <th>Комментарий</th>
+        <th>Дата</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Вывод трат за месяц -->
+    <tr>
+        <td>50.00</td>
+        <td>Покупка одежды</td>
+        <td>2023-01-05</td>
+    </tr>
+    <tr>
+        <td>20.00</td>
+        <td>Ресторан с друзьями</td>
+        <td>2023-01-15</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
