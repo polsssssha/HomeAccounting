@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление/изменение транзакции</title>
+</head>
+<body>
+<h1>Добавить/Изменить транзакцию</h1>
+<form action="/api/transactions" method="post">
+    <label for="accountId">Выберите счет:</label>
+    <!-- Здесь вставьте код для получения списка счетов из контроллера -->
+    <select id="accountId" name="accountId" required>
+        <option value="1">Счет1</option>
+        <option value="2">Счет2</option>
+    </select
