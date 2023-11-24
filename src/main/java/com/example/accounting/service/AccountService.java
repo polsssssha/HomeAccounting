@@ -1,10 +1,12 @@
-package service;
+package com.example.accounting.service;
 
-import model.Account;
+import com.example.accounting.model.Account;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
 
+@Service
 public interface AccountService {
     List<Account> getAllAccounts();
     Account getAccountById(Long id);
