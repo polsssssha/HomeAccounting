@@ -1,4 +1,4 @@
-package config;
+package com.example.accounting.config;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
